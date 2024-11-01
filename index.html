@@ -40,12 +40,12 @@
         <h1><img src="서울대학교 img/snu-logo_lg.png" /></h1>
         <div class="headerContents">
           <nav class="navList">
-            <li>교육</li>
-            <li>연구</li>
-            <li>입학</li>
-            <li>대학생활</li>
-            <li>서울대 소식</li>
-            <li>대학공개</li>
+            <li id="education">교육</li>
+            <li id="laboratory">연구</li>
+            <li id="collageStart">입학</li>
+            <li id="collageLife">대학생활</li>
+            <li id="collageNews">서울대 소식</li>
+            <li id="collageIntroduce">대학소개</li>
           </nav>
           <nav class="navList02">
             <li>
@@ -56,6 +56,15 @@
           </nav>
         </div>
       </header>
+      <div class="headerMenuPopUp">
+        <ul class="snuEducation">
+          <li>대학</li>
+          <li>대학</li>
+          <li>교과과정</li>
+          <li>기초교양교육</li>
+        </ul>
+      </div>
+
       <!--section01-->
       <section class="section01">
         <video
@@ -460,6 +469,27 @@
       </footer>
 
       <script>
+        const header = document.querySelector(".header");
+        const navList = document.querySelector(".navList");
+        const headerMenuPopUp = document.querySelector(".headerMenuPopUp");
+
+        function mouseOver(addEventListener) {
+          headerMenuPopUp.style.display = "block";
+        }
+
+        function mouseOut(addEventListener) {
+          headerMenuPopUp.style.display = "none";
+        }
+
+        window.addEventListener("mouseover", function () {
+          header.addEventListener("mouseover", mouseOver);
+          header.addEventListener("mouseout", mouseOut);
+          navList.addEventListener("mouseover", mouseOver);
+          navList.addEventListener("mouseout", mouseOut);
+          headerMenuPopUp.addEventListener("mouseover", mouseOver);
+          headerMenuPopUp.addEventListener("mouseout", mouseOut);
+        });
+
         var nowPicture = 1;
 
         document

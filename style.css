@@ -16,7 +16,7 @@ body {
 }
 
 .container {
-  width: fit-content;
+  width: 2022px;
   height: fit-content;
   margin: 0 auto;
   position: relative;
@@ -72,6 +72,28 @@ html {
   width: 20px;
   height: 20px;
 }
+.headerMenuPopUp {
+  width: 850px;
+  height: 100vh;
+  background-color: #041a70;
+  opacity: 0.8;
+  color: white;
+  position: fixed;
+  top: 0px;
+  z-index: 1030;
+  display: none;
+}
+.navList li:hover {
+  cursor: pointer;
+  font-size: 1.1rem;
+  color: white;
+}
+
+.snuEducation {
+  border: 1px solid red;
+  margin-left: 350px;
+  line-height: 25px;
+}
 
 /*section01*/
 
@@ -82,8 +104,9 @@ html {
 }
 
 .section01 video {
-  width: 2022px;
+  width: 2035px;
   height: 779px;
+  margin: 0 auto;
 }
 
 /*section04*/
