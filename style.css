@@ -89,10 +89,35 @@ html {
   color: white;
 }
 
+.snuEducationPopUP {
+  width: 550px;
+  height: fit-content;
+  display: flex;
+  gap: 30px;
+  margin-left: 280px;
+  margin-top: 180px;
+}
+
 .snuEducation {
-  border: 1px solid red;
-  margin-left: 350px;
   line-height: 25px;
+  width: 100px;
+  font-size: 0.7rem;
+}
+
+.snulabPopUp {
+  width: 550px;
+  height: fit-content;
+  display: flex;
+  gap: 30px;
+  margin-left: 280px;
+  margin-top: 180px;
+  border: 1px solid red;
+}
+
+.snulab {
+  line-height: 25px;
+  width: 100px;
+  font-size: 0.7rem;
 }
 
 /*section01*/
