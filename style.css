@@ -124,12 +124,21 @@ html {
   width: 140px;
   height: 500px;
   background-color: #041a70;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
   opacity: 0.4;
   position: absolute;
   right: 101px;
   top: 0px;
   z-index: 900;
   color: #f3f3f3;
+}
+
+.rightNav img {
+  width: 30px;
+  height: 30px;
 }
 
 /*section01*/

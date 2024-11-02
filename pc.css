@@ -3,4 +3,386 @@ body {
 }
 
 @media only screen and (min-width: 1280px) {
+  .container {
+    width: 2022px;
+    height: fit-content;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  html {
+    font-size: 16px;
+  }
+
+  /*header*/
+  .header {
+    width: 180px;
+    height: 100vh;
+    position: fixed;
+    padding: 25px;
+    padding-top: 45px;
+    background-color: var(--color-blue);
+    z-index: 9000;
+  }
+
+  .headerContents {
+    width: 100%;
+    height: 550px;
+    position: absolute;
+    left: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.8rem;
+  }
+
+  .headerContents .navList {
+    display: flex;
+    flex-direction: column;
+    color: #adcbff;
+    gap: 40px;
+    text-align: center;
+    margin-top: 40px;
+    justify-content: space-evenly;
+  }
+
+  .headerContents .navList02 {
+    display: flex;
+    flex-direction: column;
+    color: #adcbff;
+    gap: 20px;
+    text-align: center;
+    margin-top: 120px;
+    justify-content: space-evenly;
+  }
+
+  .headerContents .navList02 img {
+    width: 20px;
+    height: 20px;
+  }
+  .headerMenuPopUp {
+    width: 850px;
+    height: 100vh;
+    background-color: #041a70;
+    opacity: 0.8;
+    color: white;
+    position: fixed;
+    top: 0px;
+    z-index: 1030;
+    display: none;
+  }
+  .navList li:hover {
+    cursor: pointer;
+    font-size: 1.1rem;
+    color: white;
+  }
+
+  .snuEducationPopUP {
+    width: 550px;
+    height: fit-content;
+    display: flex;
+    gap: 30px;
+    margin-left: 280px;
+    margin-top: 180px;
+  }
+
+  .snuEducation {
+    line-height: 25px;
+    width: 100px;
+    font-size: 0.7rem;
+  }
+
+  .snulabPopUp {
+    width: 550px;
+    height: fit-content;
+    display: flex;
+    gap: 30px;
+    margin-left: 280px;
+    margin-top: 180px;
+    border: 1px solid red;
+  }
+
+  .snulab {
+    line-height: 25px;
+    width: 100px;
+    font-size: 0.7rem;
+  }
+
+  .rightNav {
+    width: 140px;
+    height: 500px;
+    background-color: #041a70;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    opacity: 0.4;
+    position: absolute;
+    right: 101px;
+    top: 0px;
+    z-index: 900;
+    color: #f3f3f3;
+  }
+
+  .rightNav img {
+    width: 30px;
+    height: 30px;
+  }
+
+  /*section01*/
+
+  .section01 {
+    width: 1920px;
+    height: 779px;
+    position: relative;
+  }
+
+  .section01 video {
+    width: 2035px;
+    height: 779px;
+    margin: 0 auto;
+  }
+
+  /*section04*/
+  .section02 {
+    width: 1920px;
+    height: 1844px;
+    background-color: #ffffff;
+    position: relative;
+  }
+
+  .section02subTitle {
+    width: 1725px;
+    height: 185px;
+    background-color: #ffffff;
+    position: absolute;
+    right: 0px;
+    align-content: center;
+  }
+
+  .section02subTitle img {
+    width: 220px;
+    height: 26px;
+    margin-left: 15%;
+    float: left;
+  }
+
+  .section02subTitle .line {
+    width: 950px;
+    height: 4px;
+    background-color: #000000;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 30px;
+    float: left;
+  }
+
+  .section02Contents {
+    width: 1725px;
+    height: 1659px;
+    position: absolute;
+    right: 0px;
+    top: 185px;
+  }
+
+  .section02ContentsMain {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+  }
+
+  .article {
+    width: 1200px;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 90px;
+  }
+
+  .article h2 {
+    line-height: 25px;
+    font-size: 2.5rem;
+    margin-top: 15px;
+  }
+
+  .article p {
+    color: grey;
+    line-height: 25px;
+    font-size: 0.9rem;
+  }
+
+  .place-image-wrapper {
+    height: fit-content;
+    width: 280px;
+  }
+
+  .place-image-wrapper img {
+    width: 255px;
+    height: 265px;
+  }
+
+  .place-image-wrapper h2 {
+    font-size: 1rem;
+  }
+
+  /*section03*/
+  .section03 {
+    width: 1920px;
+    height: 462.683px;
+    background-color: #f3f3f3;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .section03Contents {
+    width: 3033px;
+    height: 337px;
+    margin-top: 80px;
+    margin-left: 160px;
+    align-items: center;
+    align-content: center;
+    transition: all 1s;
+  }
+
+  .carousellBtnI {
+    width: 60px;
+    height: 50px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    border: none;
+    background-color: transparent;
+  }
+
+  .carousellBtnII {
+    width: 60px;
+    height: 50px;
+    position: absolute;
+    right: 60px;
+    top: 0px;
+    border: none;
+    background-color: transparent;
+  }
+
+  .section03ContentsIMG {
+    float: right;
+    width: 337px;
+    height: 337px;
+  }
+
+  /*section04*/
+
+  .section04 {
+    width: 1920px;
+    height: 925px;
+    background-color: #f3f3f3;
+    position: relative;
+  }
+
+  .cafeteria {
+    width: 100%;
+    height: 120px;
+    background-color: #041a70;
+    padding-left: 450px;
+  }
+
+  .section04subTitle {
+    width: 1725px;
+    height: 185px;
+    background-color: #f3f3f3;
+    align-content: center;
+  }
+
+  .section04subTitle img {
+    width: 190px;
+    height: 26px;
+    margin-left: 26.5%;
+    float: left;
+  }
+
+  .section04subTitle .line {
+    width: 950px;
+    height: 4px;
+    background-color: #000000;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 30px;
+    float: left;
+  }
+
+  .section04Contents {
+    width: 1725px;
+    height: 725px;
+    position: absolute;
+    right: 0px;
+  }
+
+  .section04ContentsMain {
+    width: 1200px;
+    height: 620px;
+    margin: 0 auto;
+  }
+  /*footer*/
+  .footer {
+    width: 1920px;
+    height: 292.25px;
+    font-size: 0.8rem;
+    background-color: white;
+  }
+
+  .footerContents {
+    width: 1200px;
+    height: 100%;
+    margin-left: 458px;
+    position: relative;
+    padding: 30px;
+  }
+
+  .snsInner {
+    width: 1200px;
+    height: 40px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    gap: 25px;
+  }
+
+  .snsInner img {
+    width: 98px;
+    height: 20px;
+  }
+
+  .footerLogo {
+    width: 190px;
+    height: 50px;
+    display: flex;
+    position: absolute;
+    bottom: 150px;
+    right: 30px;
+  }
+
+  .footerLogo img {
+    width: 120px;
+    height: 50px;
+  }
+
+  .footerText {
+    align-content: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 0.8rem;
+  }
+
+  .footerText span::after {
+    content: "|";
+    width: 3px;
+    height: 5px;
+    color: var(--color-whitegrey);
+    margin: 10px;
+  }
+
+  .address {
+    color: grey;
+  }
 }
