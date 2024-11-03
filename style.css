@@ -17,7 +17,6 @@ body {
 
 .container {
   width: 2022px;
-  height: fit-content;
   margin: 0 auto;
   position: relative;
 }
@@ -111,7 +110,6 @@ html {
   gap: 30px;
   margin-left: 280px;
   margin-top: 180px;
-  border: 1px solid red;
 }
 
 .snulab {
@@ -139,6 +137,10 @@ html {
 .rightNav img {
   width: 30px;
   height: 30px;
+}
+
+.mobileNav {
+  display: none;
 }
 
 /*section01*/

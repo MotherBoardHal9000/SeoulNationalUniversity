@@ -99,7 +99,6 @@ body {
     gap: 30px;
     margin-left: 280px;
     margin-top: 180px;
-    border: 1px solid red;
   }
 
   .snulab {
@@ -127,6 +126,29 @@ body {
   .rightNav img {
     width: 30px;
     height: 30px;
+  }
+
+  .mobileNav {
+    width: 80vw;
+    height: 68px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    display: none;
+  }
+
+  .mobileNav img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    display: none;
   }
 
   /*section01*/
