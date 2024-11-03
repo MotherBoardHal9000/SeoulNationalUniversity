@@ -4,7 +4,7 @@ body {
 
 @media only screen and (min-width: 1280px) {
   .container {
-    width: 2022px;
+    width: 100vw;
     height: fit-content;
     margin: 0 auto;
     position: relative;
