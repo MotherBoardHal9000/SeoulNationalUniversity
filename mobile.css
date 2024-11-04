@@ -111,13 +111,18 @@ body {
   }
 
   .section01 .mobileVideo {
-    display: none;
+    width: 160vw;
+    height: 546.06px;
+    background-position: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   /*section04*/
   .section02 {
     width: 100vw;
-    height: 6720px;
+    height: 6620px;
     background-color: #ffffff;
     position: relative;
   }
@@ -210,10 +215,9 @@ body {
   }
 
   .section03Contents {
-    width: 900vw;
-    height: 550px;
+    width: 880vw;
+    height: 450px;
     transition: all 1s;
-    margin: 0 auto;
   }
   .section03ContentsIMG {
     float: left;
