@@ -81,6 +81,18 @@ body {
     display: block;
   }
 
+  .mark {
+    width: 80vw;
+    height: 200px;
+    margin-top: 100px;
+    z-index: 100;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0.5;
+    display: block;
+  }
+
   /*section01*/
 
   .section01 {
@@ -105,7 +117,7 @@ body {
   /*section04*/
   .section02 {
     width: 100vw;
-    height: 6620px;
+    height: 6520px;
     background-color: #ffffff;
     position: relative;
   }
@@ -157,7 +169,7 @@ body {
     justify-content: center;
     align-items: center;
     align-content: center;
-    margin-bottom: 90px;
+    margin-bottom: 70px;
   }
 
   .article h2 {
@@ -198,14 +210,16 @@ body {
   }
 
   .section03Contents {
-    width: 880vw;
-    height: 450px;
+    width: 900vw;
+    height: 550px;
     transition: all 1s;
+    margin: 0 auto;
   }
   .section03ContentsIMG {
-    float: left;
     width: 100vw;
     height: 400px;
+    margin-bottom: 50px;
+    float: left;
   }
 
   .carousellBtnI {
@@ -216,6 +230,7 @@ body {
     top: 0px;
     border: none;
     background-color: transparent;
+    z-index: 90;
   }
 
   .carousellBtnII {
@@ -226,13 +241,14 @@ body {
     top: 0px;
     border: none;
     background-color: transparent;
+    z-index: 90;
   }
 
   /*section04*/
 
   .section04 {
     width: 100vw;
-    height: 2125px;
+    height: 2025px;
     background-color: #f3f3f3;
     position: relative;
   }
@@ -275,7 +291,7 @@ body {
 
   .section04ContentsMain {
     width: 100vw;
-    height: 620px;
+    height: 720px;
     display: flex;
     flex-direction: column;
   }

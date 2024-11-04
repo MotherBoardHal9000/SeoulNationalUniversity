@@ -92,6 +92,7 @@
 
       <!--section01-->
       <section class="section01">
+        <img class="mark" src="서울대학교 img/snu-logo_lg.png" />
         <video
           class="nomalVideo"
           src="video/서울대학교 브랜딩 영상 편집본-2-1.mov"
@@ -101,9 +102,7 @@
           muted
           allow="autoplay"
           loop
-        >
-          <img class="mark" src="서울대학교 img/" />
-        </video>
+        ></video>
         <video
           class="mobileVideo"
           src="video/서울대학교 브랜딩 영상 편집본-2-1.mov"
@@ -572,8 +571,10 @@
             nowPicture -= 1;
           }
         });
-      var pastPicture = 1;
+
       if (matchMedia("only screen and (max-width: 768px)").matches) {
+        var pastPicture = 1;
+
         document
           .querySelector(".carousellBtnI ")
           .addEventListener("click", function (addEventListener) {

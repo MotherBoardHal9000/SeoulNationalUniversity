@@ -151,6 +151,10 @@ body {
     display: none;
   }
 
+  .mark {
+    display: none;
+  }
+
   /*section01*/
 
   .section01 {
@@ -162,7 +166,6 @@ body {
   .section01 video {
     width: 2035px;
     height: 779px;
-    margin: 0 auto;
   }
 
   /*section04*/
