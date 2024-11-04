@@ -2,7 +2,7 @@ body {
   --color-whitegrey: #eaeaea;
 }
 
-@media (min-width: 768px) and (max-width: 1280px) {
+@media (min-width: 769px) and (max-width: 1280px) {
   .container {
     width: 100vw;
     overflow-x: hidden;
@@ -153,8 +153,14 @@ body {
   }
 
   .section02ContentsMain {
-    width: 100%;
+    width: 100vw;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 0;
   }
 
   .article {

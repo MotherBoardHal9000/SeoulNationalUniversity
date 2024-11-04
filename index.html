@@ -55,11 +55,11 @@
             <li>ENG</li>
           </nav>
         </div>
-        <div class="mobileNav">
-          <img src="서울대학교 img/index-topbanner-symbol_sm.png" />
-          <span>서울대학교</span>
-        </div>
       </header>
+      <div class="mobileNav">
+        <img src="서울대학교 img/index-topbanner-symbol_sm.png" />
+        <span>서울대학교</span>
+      </div>
       <!--오른쪽 상단 메뉴-->
 
       <div class="headerMenuPopUp">
@@ -568,7 +568,7 @@
         headerMenuPopUp.addEventListener("mouseout", mouseOut);
       });
 
-      var nowPicture = 1;
+      let nowPicture = 1;
 
       document
         .querySelector(".carousellBtnI ")
@@ -597,6 +597,61 @@
             nowPicture -= 1;
           }
         });
+
+      if (matchMedia("only screen and (max-width: 768px)").matches) {
+        var pastPicture = 1;
+
+        document
+          .querySelector(".carousellBtnI ")
+          .addEventListener("click", function (addEventListener) {
+            if (pastPicture == 1) {
+              document.querySelector(".section03Contents").style.transform =
+                "translateX(-100vw)";
+              pastPicture += 1;
+            }
+            if (pastPicture == 2) {
+              document.querySelector(".section03Contents").style.transform =
+                "translateX(-200vw)";
+              pastPicture += 1;
+            }
+          });
+
+        document
+          .querySelector(".carousellBtnII ")
+          .addEventListener("click", function (addEventListener) {
+            if (pastPicture == 3) {
+              document.querySelector(".section03Contents ").style.transform =
+                "translateX(-100vw)";
+              pastPicture -= 1;
+            } else if (pastPicture == 2) {
+              document.querySelector(".section03Contents ").style.transform =
+                "translateX(0px)";
+              pastPicture -= 1;
+            }
+          });
+      }
+
+      //화면의 크기가 760px 이상일때 적용 할 코드
+      if (matchMedia("only screen and (max-width: 768px)").matches) {
+        header.addEventListener("mouseover", function () {
+          headerMenuPopUp.style.display = "none";
+        });
+        header.addEventListener("click", function () {
+          headerMenuPopUp.style.display = "none";
+        });
+        navList.addEventListener("mouseover", function () {
+          headerMenuPopUp.style.display = "none";
+        });
+        navList.addEventListener("click", function () {
+          headerMenuPopUp.style.display = "none";
+        });
+        headerMenuPopUp.addEventListener("mouseover", function () {
+          headerMenuPopUp.style.display = "none";
+        });
+        headerMenuPopUp.addEventListener("click", function () {
+          headerMenuPopUp.style.display = "none";
+        });
+      }
     </script>
   </body>
 </html>

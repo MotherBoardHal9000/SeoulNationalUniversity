@@ -1,12 +1,13 @@
 body {
   --color-whitegrey: #ffffff;
+  overflow-x: hidden;
 }
 
 @media only screen and (max-width: 768px) {
   .container {
     width: 100vw;
+    margin: 0 auto;
     position: relative;
-    overflow-x: hidden;
   }
 
   html {
@@ -20,6 +21,7 @@ body {
     position: relative;
     background-color: var(--color-blue);
     z-index: 9000;
+    background-color: #041a70;
   }
 
   .header h1 {
@@ -85,6 +87,8 @@ body {
     color: #ffffff;
     font-size: 0.8rem;
     letter-spacing: 1px;
+    display: block;
+    background-color: #041a70;
   }
 
   .mobileNav img {
@@ -113,7 +117,7 @@ body {
   /*section04*/
   .section02 {
     width: 100vw;
-    height: 5950px;
+    height: 6720px;
     background-color: #ffffff;
     position: relative;
   }
@@ -141,20 +145,20 @@ body {
   }
 
   .section02Contents {
-    width: 95vw;
-    height: 7230px;
+    width: 100%;
+    height: 6530px;
     top: 185px;
     display: flex;
+  }
+
+  .section02ContentsMain {
+    width: 100vw;
+    height: 6530px;
+    position: absolute;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     align-content: center;
-    margin: 0;
-  }
-
-  .section02ContentsMain {
-    width: 100%;
-    height: 100%;
   }
 
   .article {
@@ -163,6 +167,8 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    align-content: center;
     margin-bottom: 90px;
   }
 
@@ -199,17 +205,20 @@ body {
   /*section03*/
   .section03 {
     width: 100vw;
-    height: 462.683px;
+    height: 450px;
     background-color: #f3f3f3;
-    position: relative;
   }
 
   .section03Contents {
-    width: 2533px;
-    height: 462.683px;
-    margin-top: 80px;
-    margin-left: 0px;
+    width: 900vw;
+    height: 550px;
     transition: all 1s;
+    margin: 0 auto;
+  }
+  .section03ContentsIMG {
+    float: left;
+    width: 100vw;
+    height: 400px;
   }
 
   .carousellBtnI {
@@ -232,12 +241,6 @@ body {
     background-color: transparent;
   }
 
-  .section03ContentsIMG {
-    float: right;
-    width: 100vw;
-    height: 400px;
-  }
-
   /*section04*/
 
   .section04 {
@@ -255,8 +258,8 @@ body {
   }
 
   .section04subTitle {
-    width: 85%;
-    height: 185px;
+    width: 100%;
+    height: 135px;
     background-color: #f3f3f3;
     display: flex;
     align-items: center;
@@ -269,11 +272,11 @@ body {
   }
 
   .section04subTitle .line {
-    width: 150px;
+    width: 350px;
     height: 4px;
     background-color: #000000;
     align-items: center;
-    margin-top: 10px;
+    margin-top: 0px;
     margin-left: 30px;
   }
 
@@ -311,7 +314,7 @@ body {
   }
 
   .snsInner {
-    width: 100vw;
+    width: 90vw;
     height: 40px;
     display: flex;
     justify-content: flex-start;
@@ -353,7 +356,7 @@ body {
     width: 3px;
     height: 5px;
     color: var(--color-whitegrey);
-    margin: 10px;
+    margin: 0px;
   }
 
   .address {
